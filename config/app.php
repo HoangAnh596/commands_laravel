@@ -1,0 +1,43 @@
+<?php
+
+return [
+    'app_url' => env('APP_URL', 'http://checkpoint.izikit.com/'),
+    'app_url_prod' => env('APP_URL_PROD', 'http://checkpoint.vnext.vn/'),
+    'locale' => 'vi',
+    'status' => [
+        'on' => 1,
+        'off' => 0,
+    ],
+    'mode' => env('MODE', 'stg'),
+    'response_code' => [
+        'not_found'             => 404,
+        'not_authorized'        => 401,
+        'forbidden'             => 403,
+        'bad_request'           => 400,
+        'unprocessable_entity'  => 422,
+        'server_error'          => 500,
+    ],
+    'import_file_type' => [
+        'xlsx'  => \Maatwebsite\Excel\Excel::XLSX,
+        'csv'   => \Maatwebsite\Excel\Excel::CSV,
+    ],
+    'hr_email' => env('HR_EMAIL', 'hanhlth@vnext.vn'),
+    'hrm_service_host' => env('HRM_SERVICE_HOST', 'hrm-webserver'),
+    'hr_email_support' => 'nhansu@vnext.vn',
+    'url_document' => 'https://portal.vnext.vn/file/rz8jDn6q5yBK3kLAZ2Qa942mXdMAepbv',
+    'checkpoint_period' => '30/06/2022',
+    'mail_from' => env('MAIL_FROM', 'checkpoint@vnext.vn'),
+    'mail_test' => env('MAIL_TEST', 'nhantt@vnext.vn'),
+    'username_test' => 'Tester',
+    'per_page' => 20,
+    'min' => 1,
+    'max' => 10,
+    'percentage_process' => 0.3,
+    'percentage_quality' => 0.3,
+    'percentage_complex' => 0.1,
+    'percentage_responsibility' => 0.15,
+    'percentage_policy' => 0.1,
+    'percentage_ability' => 0.05,
+    'percentage_activity' => 0.05,
+    'time_deadline' => '23:59',
+];
